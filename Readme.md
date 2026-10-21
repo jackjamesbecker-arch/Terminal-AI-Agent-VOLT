@@ -26,13 +26,28 @@ Everything is optional. Camera, screen, email and phone access are all **off unt
 
 ## Quick start
 
-You need a Windows 10/11 PC, Python 3.10 or newer, and a free [Groq](https://console.groq.com) API key. Full steps are in **[SETUP.md](SETUP.md)**. The short version:
+You need Python 3.10 or newer and a free [Groq](https://console.groq.com) API key.
+
+### Windows 10/11
+
+Full steps are in **[SETUP.md](SETUP.MD)**. The short version:
 
 ```powershell
 python -m pip install -U groq pyttsx3 psutil pyperclip edge-tts ddgs sounddevice numpy
 setx GROQ_API_KEY your_key_here        # then close and reopen PowerShell
 python agent_windows.py
 ```
+
+### Mac
+
+```bash
+git clone https://github.com/jackjamesbecker-arch/Volt-AI.git
+cd "Volt-AI/Mac Terminal"
+bash setup.sh        # installs packages and adds the `volt` command
+volt
+```
+
+More in the [Mac README](Mac%20Terminal/README.md).
 
 The first time you run it, Volt asks you to create your profile.
 
